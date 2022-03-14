@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6e6e6;
+  transition: all 0.4s linear;
+}
+.flid-1 {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 3rem;
+  position: absolute;
+  top: 9vh;
+  color: royalblue;
+  left: 40vw;
+  letter-spacing: 1.6px;
+  display: none;
+}
+
+.kit {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  position: absolute;
+  z-index: -5;
+}
+.an-1 {
+  position: relative;
+  top: 150px;
+  width: 100px;
+  height: 100px;
+  transition: all 1s linear;
+}
+.an-2 {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 24px;
+  z-index: 1;
+  padding: 5px 20px;
+  position: absolute;
+  color: white;
+  border-radius: 30px;
+  /* padding: 0.5em 1em; */
+  outline: none;
+  border: none;
+  background-color: hsl(262, 94%, 52%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  top: 77vh;
+  left: 705px;
+}
+.an-2::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #f81c66;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+.an-2:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.an-2:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+@keyframes pulsate {
+  0%,
+  to {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.ani-g {
+  height: 310px;
+  position: absolute;
+  top: 130px;
+  left: 669px;
+  width: 180px;
+}
+@media screen and (max-width: 992px) {
+  .ani-g {
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+  #ak-1 {
+    display: none;
+  }
+  .an-2 {
+    position: relative;
+    left: 100px;
+    top: 70px;
+  }
+  .flid-1 {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    letter-spacing: 0.5px;
+  }
+}
