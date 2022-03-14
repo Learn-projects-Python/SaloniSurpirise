@@ -5,5 +5,6 @@ btn.addEventListener('click', () => {
     getS.style.display = "flex";
     document.body.style.backgroundColor = "#242424";
     imgDo.src = 'svg/ul-1.svg';
+    // i m not getting the error
 
 })
